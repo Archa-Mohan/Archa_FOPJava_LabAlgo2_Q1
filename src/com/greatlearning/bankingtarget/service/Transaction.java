@@ -11,12 +11,12 @@ public class Transaction {
 		System.out.println("Enter the size of transaction array");
 
 		int noOfTransactions = sc.nextInt();
-		long[] transactionArray = new long[noOfTransactions];
+		int[] transactionArray = new int[noOfTransactions];
 
 		System.out.println("Enter the values of array");
 
 		for (int i = 0; i < noOfTransactions; i++) {
-			transactionArray[i] = sc.nextLong();
+			transactionArray[i] = sc.nextInt();
 		}
 
 		System.out.println("Enter the total no of targets that needs to be achieved");
@@ -30,7 +30,7 @@ public class Transaction {
 			boolean targetAchieved = false;
 
 			System.out.println("enter the value of target");
-			long targetValue = sc.nextLong();
+			int targetValue = sc.nextInt();
 
 			for (int i = 0; i < noOfTransactions; i++) {
 				sum += transactionArray[i];
